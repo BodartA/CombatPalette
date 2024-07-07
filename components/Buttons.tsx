@@ -38,20 +38,3 @@ export const PrimaryButtonWIcon = ({ name = "smallButton", link = "/", icon = <A
     </div>
   );
 };
-
-
-
-/*
-
-export const DefaultPrimaryButtonArrowResp = ({ name = "defaultButtonWIcon", link = "/", icon = <ArrowRight /> }) => {
-  return (
-    <div className=" inline-block">
-      <button className=" flex bg-emerald-800 text-white lg:px-9 lg:py-6 px-6 py-[18px] rounded-full hover:text-emerald-800 hover:bg-white border-[1px] border-emerald-800 transition duration-300 text-center text-nowrap font-dm-sans gap-2">
-        <Link href={link}>{name}</Link>
-        {icon}
-      </button>
-    </div>
-  );
-};
-
-*/
