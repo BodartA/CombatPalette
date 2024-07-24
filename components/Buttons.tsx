@@ -3,17 +3,34 @@ import { ArrowRight, Component } from "lucide-react";
 import Link from "next/link";
 import React from "react";
 
-const Button = ({ name = "Button" }) => {
+const SecondaryWhiteButtonWIcon = ({ name = "Secondary White Button Whith Icon", link = "/", icon = <ArrowRight className=" my-auto w-[20px] h-[20px]" />, buttonSize = "small" }) => {
+  let mesures = ""
+
+  switch (buttonSize) {
+    case "small":
+      mesures = "px-6 py-[18px] text-base font-light"
+      break
+    case "default":
+      mesures = "lg:px-9 lg:py-6 px-6 py-[18px] lg:text-lg text-base font-light "
+      break
+    default:
+      mesures = "px-6 py-[18px] text-base font-light"
+      break
+  }
+
   return (
     <div>
-      <button className="">{name}</button>
+      <button className={`flex bg-white text-emerald-800 ${mesures} rounded-full hover:text-white hover:bg-emerald-800 border-[1px] border-white transition duration-300 text-nowrap font-dm-sans gap-2`}>
+        <Link href={link}>{name}</Link>
+        {icon}
+      </button>
     </div>
   );
 };
 
-export default Button;
+export default SecondaryWhiteButtonWIcon;
 
-export const PrimaryButtonWIcon = ({ name = "smallButton", link = "/", icon = <ArrowRight className="flex my-auto w-[20px] h-[20px]" />, buttonSize = "small" }) => {
+export const PrimaryButtonWIcon = ({ name = "Primary Button With Icon", link = "/", icon = <ArrowRight className=" my-auto w-[20px] h-[20px]" />, buttonSize = "small" }) => {
 
   let mesures = ""
 
