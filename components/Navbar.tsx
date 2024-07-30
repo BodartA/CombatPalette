@@ -34,7 +34,7 @@ const Navbar = () => {
       </div>
 
       <div className={`${isOpen ? ' transition-transform -translate-x-full' : ' transition-transform translate-x-5'} 
-        lg:transition-none lg:transform-none lg:items-center lg:flex gap-6 lg:static absolute top-full left-full leading-8 h-screen lg:w-auto lg:bg-inherit lg:h-auto mt-[1px] bg-emerald-50 w-[264px] lg:p-0 lg:shadow-none shadow-l-sm`}>
+        lg:transition-none lg:transform-none lg:items-center lg:flex gap-6 lg:static absolute top-full left-full leading-8 h-screen lg:w-auto lg:bg-inherit lg:h-auto mt-[0px] bg-emerald-50 w-[264px] lg:p-0 lg:shadow-none shadow-l-sm`}>
         <ul className=' lg:flex gap-[33px] text-emerald-800 pt-6 pb-4 lg:p-0'>
           <li><Link className=' flex justify-center py-1' href='/' data-active={isActive("/")}>Home</Link></li>
           <li><Link className=' flex justify-center py-1' href='/about' data-active={isActive("/about")}>About</Link></li>

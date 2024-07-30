@@ -2,7 +2,7 @@ import React from 'react';
 import Image from 'next/image';
 import inventory from '../../public/inventory.svg';
 import SecondaryWhiteButtonWIcon, { PrimaryButtonWIcon } from '../../components/Buttons';
-import { SwatchBook } from 'lucide-react';
+import { Palette, SwatchBook } from 'lucide-react';
 
 const LandingPage = () => {
   return (
@@ -19,7 +19,7 @@ const LandingPage = () => {
               Don&apos;t tell me you&apos;ve never wondered how many paints do you have ? Wich brand ? Wich colors ? ...
             </h2>
             <div className='flex lg:mb-0 justify-center'>
-              <SecondaryWhiteButtonWIcon buttonSize='default' name={"My paints"} icon={<SwatchBook strokeWidth={1.75} />} />
+              <SecondaryWhiteButtonWIcon buttonSize='default' name={"My paints"} icon={<Palette strokeWidth={1.75} />} />
             </div>
           </div>
         </div>
